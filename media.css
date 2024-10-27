@@ -22,29 +22,29 @@
  .header .flex .navbar{
     position: absolute;
     top: 120%; left: 2rem; right: 2rem;
-    background-color: var(--light-white);
+    background-color: var(--light-black);
     backdrop-filter: blur(.4rem);
     border-radius: .5rem;
     transform: scale(0);
     transform-origin: top right;
-    transition: .2s linear;
-
+    padding: 1.5rem .5rem;
 }
 
 .header .flex .navbar.active{
     transform: scale(1);
+    transition: .2s linear;
 }
 
 .header .flex .navbar a{
     display: block;
-    padding: .5rem 1.5rem;
-    margin: 1.5rem .5rem;
+    padding: 1.5rem 1.5rem;
+    margin: .5rem .5rem;
     color: var(--white);
     border-radius: .5rem;
 }
 
 .header .flex .navbar a:hover{
-   background-color: var(--light-black);
+   background-color: var(--light-white);
 }
  
 }
