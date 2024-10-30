@@ -75,7 +75,7 @@ section{
 .header{
     position: fixed;
     top: 0; left: 0; right: 0;
-    background-color: linear-gradient(0deg, transparent, var(--black));
+    background: var(--light-black);
     z-index: 1000;
 }
 
@@ -87,7 +87,7 @@ section{
 }
 
 .header .logo img{
-    width: 7rem;
+    width: 6rem;
 }
 
 .header .flex .navbar a{
@@ -110,10 +110,11 @@ section{
 
 /*------------------------------------------------------------------------------------------------------------------------------------------------*/
 .home{
-    background: url('./img/fundo.jpg') no-repeat rgba(0, 0, 0, .5);
+    background: url('./img/fundo.jpg') no-repeat rgba(0, 0, 0, .4);
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
+    background-blend-mode: multiply;
 }
 
 .home .flex{
@@ -161,10 +162,11 @@ section{
 
 /*---------------------------------------------------------------------------------------------------------------------------------------*/
 .about{
-    background: url('./img/fundo.jpg') no-repeat rgba(0, 0, 0, .5);
+    background: url('./img/fundo.jpg') no-repeat rgba(0, 0, 0, .4);
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
+    background-blend-mode: multiply;
 }
 
 .about .details{
@@ -244,5 +246,129 @@ section{
 
 
 /*----------------------------------------------------------------------------------------------------------------------------------*/
+
+.reviews{
+    background: url('./img/fundo.jpg') no-repeat rgba(0, 0, 0, .4);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+
+.heading{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 5rem;
+    color: var(--main-color);
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+.reviews .grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 35rem);
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.reviews .grid .box img{
+    height: 18rem;
+    width: 18rem;
+    border-radius: 5%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.reviews .grid .box{
+    background-color: var(--light-bg);
+    padding: 2rem;
+    text-align: center;
+    backdrop-filter: blur(.4rem);
+    border-radius: .5rem;
+}
+
+.reviews .grid .box h3{
+    font-size: 2rem;
+    color: var(--black);
+}
+
+.reviews .grid .box p{
+    padding: 1rem 0;
+    line-height: 2;
+    color: var(--light-black);
+    font-size: 1rem;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------------*/
+.tours{
+    background: url('./img/fundo.jpg') no-repeat rgba(0, 0, 0, .4);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+.tours .grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 35rem);
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.tours .grid .box{
+    background-color: var(--light-black);
+    padding: 2rem;
+    backdrop-filter: blur(.4rem);
+    border-radius: .5rem;
+    position: relative;
+}
+
+.tours .grid .box .price{
+    position: absolute;
+    top: 2.5rem; left: 3rem; 
+    border-radius: .5rem;
+    background: var(--light-black);
+    color: var(--white);
+    font-size: 1.8rem;
+    padding: .8rem 1rem;
+}
+
+.tours .grid .box .price i{
+    color: var(--main-color);
+    margin-right: .5rem;
+}
+
+
+.tours .grid .box .image{
+    height: 20rem;
+    width: 100%;
+    object-fit: cover;
+    border-radius: .5rem;
+    margin-bottom: 2rem;
+}
+
+.tours .grid .box .name{
+    font-size: 2rem;
+    color: var(--white);
+}
+
+.tours .grid .box .address{
+    font-size: 1.7rem;
+    color: var(--light-white);
+    line-height: 1.5;
+    padding: .5rem 0;
+}
+
+.tours .grid .box:hover{
+    background-color: var(--black);
+}
+
+.tours .grid .box:hover .price{
+    background-color: var(--black);
+}
 
 
