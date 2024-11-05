@@ -7,6 +7,19 @@
         font-size: 4.6rem;
         margin-bottom: 2rem;
     }
+    .contact .outros {
+        flex-direction: column; 
+    }
+    
+    .contact .outros form {
+        order: -1; 
+        max-width: 100%; 
+    }
+    
+    .contact .outros .contactos {
+        order: 0; 
+    }
+    
 }
 
 @media (max-width:768px){
@@ -54,6 +67,7 @@
 .heading{
     font-size: 3.5rem;
 }
+
 
 /*--------------------------------------------------------------------*/
  
